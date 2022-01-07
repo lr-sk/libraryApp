@@ -4,7 +4,7 @@ Training individual project at ITechArt. The main idea of this app is to manage 
 
 This project build with Maven. For managing database used PostgreSQL.
 
-In this project used:
+This project uses:
   * java 8+
   * servlet api
   * apache commons dbcp2
