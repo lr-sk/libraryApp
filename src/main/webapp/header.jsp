@@ -12,14 +12,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="all-clients">Clients</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                        Service
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="library-yield">Library yield</a>
-                        <a class="dropdown-item" href="writing-off-books">Writing off books</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="library-yield">Library yield</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="writing-off-books">Writing off books</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">

@@ -8,6 +8,7 @@
 </head>
 <body>
 <jsp:include page="header.jsp"/>
+<h1>Add new client</h1>
 <jsp:include page="footer.jsp"/>
 </body>
 </html>

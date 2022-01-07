@@ -8,13 +8,30 @@
 </head>
 <body>
 <jsp:include page="header.jsp"/>
-<h1>Library</h1>
-<br/>
-<h2>Books</h2>
-<div><a href="all-books">all books</a></div>
-<div><a href="add-book">add book</a></div>
-<h2>Bookings</h2>
-<h2>Clients</h2>
-<div><a href="all-clients">all clients</a></div>
+<div class="container">
+    <h1 class="text-center">Library</h1>
+</div>
+<div class="container">
+    <div class="list-group">
+        <h2>Books</h2>
+        <a href="all-books" class="list-group-item list-group-item-action">All books</a>
+        <a href="add-book" class="list-group-item list-group-item-action">Add book</a>
+    </div>
+</div>
+<div class="container">
+    <div class="list-group">
+        <h2>Bookings</h2>
+        <a href="all-books" class="list-group-item list-group-item-action">All bookings</a>
+        <a href="add-book" class="list-group-item list-group-item-action">Add booking</a>
+    </div>
+</div>
+<div class="container">
+    <div class="list-group">
+        <h2>Clients</h2>
+        <a href="all-clients" class="list-group-item list-group-item-action">All clients</a>
+        <a href="add-client" class="list-group-item list-group-item-action">Add client</a>
+    </div>
+</div>
+<jsp:include page="footer.jsp"/>
 </body>
 </html>

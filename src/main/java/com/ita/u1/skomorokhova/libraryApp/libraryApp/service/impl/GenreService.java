@@ -7,10 +7,10 @@ import com.ita.u1.skomorokhova.libraryApp.libraryApp.service.EntityService;
 import java.util.Arrays;
 import java.util.List;
 
-public class GenresService implements EntityService<Genre> {
+public class GenreService implements EntityService<Genre> {
     GenreDao dao;
 
-    public GenresService(GenreDao dao) {
+    public GenreService(GenreDao dao) {
         this.dao = dao;
     }
 
