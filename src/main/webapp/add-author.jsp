@@ -1,16 +1,13 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: vskom
-  Date: 1/7/2022
-  Time: 3:18 AM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Title</title>
+    <title>New Author</title>
+    <jsp:include page="head.jsp"/>
 </head>
 <body>
-
+<jsp:include page="header.jsp"/>
+<jsp:include page="footer.jsp"/>
 </body>
 </html>
