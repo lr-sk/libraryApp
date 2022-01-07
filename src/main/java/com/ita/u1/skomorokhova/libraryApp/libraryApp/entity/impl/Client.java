@@ -1,10 +1,15 @@
 package com.ita.u1.skomorokhova.libraryApp.libraryApp.entity.impl;
 
 import com.ita.u1.skomorokhova.libraryApp.libraryApp.entity.Entity;
+import lombok.Builder;
+import lombok.Data;
 
 import java.time.LocalDate;
 
+@Builder
+@Data
 public class Client implements Entity {
+    private Long id;
     private String name;
     private String surname;
     private String patronymic;

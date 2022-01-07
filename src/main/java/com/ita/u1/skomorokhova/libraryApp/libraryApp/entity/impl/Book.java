@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @Builder
 @Data
 public class Book implements Entity {
-    private int id;
+    private long id;
     private String name;
     private String originalName;
     //private List<Genre> genres = new ArrayList<>();
