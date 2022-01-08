@@ -8,103 +8,103 @@
 <head>
     <title>${addBookConsts.TITLE}</title>
     <jsp:include page="head.jsp"/>
-<%--    <script src="js/validationAddBookForm.js"></script>--%>
-<%--    <script>--%>
-<%--        window.addEventListener("load", function() {--%>
-<%--            let bookNameInput = document.getElementById("bookName");--%>
-<%--            let originalBookNameInput = document.getElementById("originalBookName");--%>
-<%--            let bookGenresSelect = document.getElementById("bookGenres");--%>
-<%--            let bookAuthorsSelect = document.getElementById("bookAuthors");--%>
-<%--            let bookCostInput = document.getElementById("bookCost");--%>
-<%--            let bookCostPerDayInput = document.getElementById("bookCostPerDay");--%>
-<%--            let bookYearOfPublishingInput = document.getElementById("bookYearOfPublishing");--%>
-<%--            let bookNumberOfPagesInput = document.getElementById("bookNumberOfPages");--%>
-<%--            let bookNumberOfCopiesInput = document.getElementById("bookNumberOfCopies");--%>
-<%--            let bookRegistrationDateInput = document.getElementById("bookRegistrationDate");--%>
+    <script src="js/validationAddBookForm.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+            let bookNameInput = document.getElementById("bookName");
+            let originalBookNameInput = document.getElementById("originalBookName");
+            let bookGenresSelect = document.getElementById("bookGenres");
+            let bookAuthorsSelect = document.getElementById("bookAuthors");
+            let bookCostInput = document.getElementById("bookCost");
+            let bookCostPerDayInput = document.getElementById("bookCostPerDay");
+            let bookYearOfPublishingInput = document.getElementById("bookYearOfPublishing");
+            let bookNumberOfPagesInput = document.getElementById("bookNumberOfPages");
+            let bookNumberOfCopiesInput = document.getElementById("bookNumberOfCopies");
+            let bookRegistrationDateInput = document.getElementById("bookRegistrationDate");
 
-<%--            // bookNameInput.addEventListener("focusout", () => {});--%>
-<%--            // originalBookNameInput.addEventListener("focusout", () => {});--%>
-<%--            // bookGenresSelect.addEventListener("focusout", () => {});--%>
-<%--            // bookAuthorsSelect.addEventListener("focusout", () => {});--%>
-<%--            bookCostInput.addEventListener("focusout", () => {validateBookCost(bookCostInput)});--%>
-<%--            bookCostPerDayInput.addEventListener("focusout", () => {validateBookCost(bookCostPerDayInput)});--%>
-<%--            bookYearOfPublishingInput.addEventListener("focusout", () => {validateYearOfPublishing(bookYearOfPublishingInput)});--%>
-<%--            //bookNumberOfPagesInput.addEventListener("focusout", () => {validateInt(bookNumberOfPagesInput)});--%>
-<%--            bookNumberOfCopiesInput.addEventListener("focusout", () => {validateInt(bookNumberOfCopiesInput)});--%>
-<%--            bookRegistrationDateInput.addEventListener("focusout", () => validateDate(bookRegistrationDateInput));--%>
-<%--        });--%>
+            bookNameInput.addEventListener("focusout", () => {});
+            originalBookNameInput.addEventListener("focusout", () => {});
+            bookGenresSelect.addEventListener("focusout", () => {});
+            bookAuthorsSelect.addEventListener("focusout", () => {});
+            bookCostInput.addEventListener("focusout", () => {validateBookCost(bookCostInput)});
+            bookCostPerDayInput.addEventListener("focusout", () => {validateBookCost(bookCostPerDayInput)});
+            bookYearOfPublishingInput.addEventListener("focusout", () => {validateYearOfPublishing(bookYearOfPublishingInput)});
+            bookNumberOfPagesInput.addEventListener("focusout", () => {validateInt(bookNumberOfPagesInput)});
+            bookNumberOfCopiesInput.addEventListener("focusout", () => {validateInt(bookNumberOfCopiesInput)});
+            bookRegistrationDateInput.addEventListener("focusout", () => validateDate(bookRegistrationDateInput));
+        });
 
-<%--        function isEmpty(value) {--%>
-<%--            return value === "";--%>
-<%--        }--%>
+        function isEmpty(value) {
+            return value === "";
+        }
 
-<%--        function setValid(inputValue) {--%>
-<%--            inputValue.classList.add("is-valid");--%>
-<%--            inputValue.classList.remove("is-invalid");--%>
-<%--        }--%>
+        function setValid(inputValue) {
+            inputValue.classList.add("is-valid");
+            inputValue.classList.remove("is-invalid");
+        }
 
-<%--        function setInvalid(inputValue) {--%>
-<%--            inputValue.classList.add("is-invalid");--%>
-<%--            inputValue.classList.remove("is-valid");--%>
-<%--        }--%>
+        function setInvalid(inputValue) {
+            inputValue.classList.add("is-invalid");
+            inputValue.classList.remove("is-valid");
+        }
 
-<%--        function validateInt(inputValue) {--%>
-<%--            let regexp = /^d+$/;--%>
-<%--            compareInputWithPatter(inputValue, regexp);--%>
-<%--        }--%>
+        function validateInt(inputValue) {
+            let regexp = /^d+$/;
+            compareInputWithPatter(inputValue, regexp);
+        }
 
-<%--        function compareInputWithPatter(input, pattern) {--%>
-<%--            let value = input.value;--%>
+        function compareInputWithPatter(input, pattern) {
+            let value = input.value;
 
-<%--            if (!isEmpty(value)) {--%>
-<%--                if (pattern.test(value)) {--%>
-<%--                    setValid(input);--%>
-<%--                } else {--%>
-<%--                    setInvalid(input);--%>
-<%--                }--%>
-<%--            } else {--%>
-<%--                setInvalid(input);--%>
-<%--            }--%>
+            if (!isEmpty(value)) {
+                if (pattern.test(value)) {
+                    setValid(input);
+                } else {
+                    setInvalid(input);
+                }
+            } else {
+                setInvalid(input);
+            }
 
-<%--            // if (pattern.test(value)) {--%>
-<%--            //     setValid(input);--%>
-<%--            // } else {--%>
-<%--            //     setInvalid(input);--%>
-<%--            // }--%>
-<%--        }--%>
+            // if (pattern.test(value)) {
+            //     setValid(input);
+            // } else {
+            //     setInvalid(input);
+            // }
+        }
 
-<%--        function validateBookCost(costInput) {--%>
-<%--            let regexp = /^\d+[.,]?\d*$/;--%>
+        function validateBookCost(costInput) {
+            let regexp = /^\d+[.,]?\d*$/;
 
-<%--            compareInputWithPatter(costInput, regexp);--%>
-<%--        }--%>
+            compareInputWithPatter(costInput, regexp);
+        }
 
-<%--        function validateYearOfPublishing(yearOfPublishingInput) {--%>
-<%--            let yearOfPublishingInputValue = yearOfPublishingInput.value;--%>
-<%--            let regexp = /^\d{4}$/;--%>
-<%--            let currentYear = new Date().getFullYear().toString();--%>
+        function validateYearOfPublishing(yearOfPublishingInput) {
+            let yearOfPublishingInputValue = yearOfPublishingInput.value;
+            let regexp = /^\d{4}$/;
+            let currentYear = new Date().getFullYear().toString();
 
-<%--            if (yearOfPublishingInputValue > currentYear) {--%>
-<%--                setInvalid(yearOfPublishingInput);--%>
-<%--            } else {--%>
-<%--                compareInputWithPatter(yearOfPublishingInput, regexp);--%>
-<%--            }--%>
-<%--        }--%>
+            if (yearOfPublishingInputValue > currentYear) {
+                setInvalid(yearOfPublishingInput);
+            } else {
+                compareInputWithPatter(yearOfPublishingInput, regexp);
+            }
+        }
 
-<%--        function validateDate(dateInput){--%>
-<%--            let dateInputValue = dateInput.value;--%>
+        function validateDate(dateInput){
+            let dateInputValue = dateInput.value;
 
-<%--            if (!isEmpty(dateInputValue)) {--%>
-<%--                if (Date.parse(dateInputValue) < Date.now()) {--%>
-<%--                    setValid(dateInput);--%>
-<%--                } else {--%>
-<%--                    setInvalid(dateInput);--%>
-<%--                }--%>
-<%--            } else {--%>
-<%--                setInvalid(dateInput);--%>
-<%--            }--%>
-<%--        }--%>
-<%--    </script>--%>
+            if (!isEmpty(dateInputValue)) {
+                if (Date.parse(dateInputValue) < Date.now()) {
+                    setValid(dateInput);
+                } else {
+                    setInvalid(dateInput);
+                }
+            } else {
+                setInvalid(dateInput);
+            }
+        }
+    </script>
 
 </head>
 <body>
