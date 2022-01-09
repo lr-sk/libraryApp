@@ -6,7 +6,7 @@ import lombok.Value;
 public class AddBookJspConsts {
     String TITLE = "New book";
     String MAIN_HEADER = "Add new book";
-    String COST_PATTERN = "[0-9]*[.,]{1}[0-9]*";
+    String COST_PATTERN = "^\\d+[.,]?\\d*$";
 
     String BOOK_NAME_LABEL = "Book name";
     String BOOK_NAME_PLACEHOLDER = "Enter book name";
@@ -17,7 +17,7 @@ public class AddBookJspConsts {
     String ORIGINAL_BOOK_NAME_INVALID_FEEDBACK = "Please provide a original book name";
 
     String GENRES_LABEL = "Genres";
-    String GENRES_ADD_NEW_OPTION = "Select genres";
+    String GENRES_ADD_NEW_OPTION = "Add new genre";
     String GENRES_INVALID_FEEDBACK = "You have to select al least one genre or add new one";
 
     String AUTHORS_LABEL = "Authors";
