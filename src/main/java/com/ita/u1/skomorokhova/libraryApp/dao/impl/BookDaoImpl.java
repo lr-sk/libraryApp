@@ -63,6 +63,7 @@ public class BookDaoImpl implements BookDao {
             }
 
         } catch (SQLException e) {
+            log.error(e.getCause());
             log.error(Errors.DATABASE_ACCESS_ERROR);
         }
 
