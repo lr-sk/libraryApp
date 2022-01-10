@@ -151,14 +151,13 @@
             input.classList.add("is-invalid");
             input.classList.remove("is-valid");
         }
-
     </script>
 
 </head>
 <body>
 <jsp:include page="header.jsp"/>
 <h1>${addBookConsts.MAIN_HEADER}</h1>
-<form method="post" id="addBookForm" class="needs-validation" novalidate>
+<form action="" method="post" id="addBookForm" class="needs-validation" enctype="multipart/form-data" novalidate>
     <div class="form-group">
         <label for="bookName">${addBookConsts.BOOK_NAME_LABEL}</label>
         <input type="text" class="form-control" id="bookName" required placeholder="${addBookConsts.BOOK_NAME_PLACEHOLDER}">
@@ -177,7 +176,6 @@
             <c:forEach var="genre" items="${genres}">
                 <option>${genre}</option>
             </c:forEach>
-            <option value="addNewGenre"><a href="add-genre">${addBookConsts.GENRES_ADD_NEW_OPTION}</a></option>
         </select>
         <div id="bookGenresValidFeedBack" class="valid-feedback">${jspConsts.VALID_FEEDBACK}</div>
         <div id="bookGenresInvalidFeedBack" class="invalid-feedback">${addBookConsts.GENRES_INVALID_FEEDBACK}</div>

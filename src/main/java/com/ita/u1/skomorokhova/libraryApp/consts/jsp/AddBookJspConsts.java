@@ -17,8 +17,7 @@ public class AddBookJspConsts {
     String ORIGINAL_BOOK_NAME_INVALID_FEEDBACK = "Please provide a original book name";
 
     String GENRES_LABEL = "Genres";
-    String GENRES_ADD_NEW_OPTION = "Add new genre";
-    String GENRES_INVALID_FEEDBACK = "You have to select al least one genre or add new one";
+    String GENRES_INVALID_FEEDBACK = "You have to select al least one genre";
 
     String AUTHORS_LABEL = "Authors";
     String AUTHORS_ADD_NEW_OPTION = "Add new author";
