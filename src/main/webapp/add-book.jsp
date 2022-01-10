@@ -15,7 +15,7 @@
         window.addEventListener("load", function() {
             let addBookForm = document.getElementById("addBookForm")
             initFieldFuncMap();
-            //addValidation();
+            addValidation();
             addBookForm.addEventListener("submit", callValidation);
         });
 
@@ -36,8 +36,7 @@
         }
 
         function hasInvalid() {
-            debugger;
-            invalidInput = document.getElementsByClassName("is-invalid");
+            let invalidInput = document.getElementsByClassName("is-invalid");
             return invalidInput.length !== 0;
         }
 
@@ -61,7 +60,6 @@
         }
 
         function validateImage(input) {
-            debugger;
             let value = input.value.toLowerCase();
             let exec = value.split('.').pop();
             let validSize = 2097152;
