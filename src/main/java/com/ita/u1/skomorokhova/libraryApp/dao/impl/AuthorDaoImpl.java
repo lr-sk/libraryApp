@@ -1,18 +1,19 @@
 package com.ita.u1.skomorokhova.libraryApp.dao.impl;
 
 import com.ita.u1.skomorokhova.libraryApp.dao.AuthorDao;
-import com.ita.u1.skomorokhova.libraryApp.entity.impl.Entity;
+import com.ita.u1.skomorokhova.libraryApp.entity.Entity;
 
 import java.util.List;
 
 public class AuthorDaoImpl implements AuthorDao {
+
     @Override
-    public List findAll() {
+    public List<Entity> findAll() {
         return null;
     }
 
     @Override
-    public Entity findEntityById(Object id) {
+    public Entity findEntityById(Long id) {
         return null;
     }
 
@@ -22,7 +23,7 @@ public class AuthorDaoImpl implements AuthorDao {
     }
 
     @Override
-    public boolean delete(Object id) {
+    public boolean delete(Long id) {
         return false;
     }
 

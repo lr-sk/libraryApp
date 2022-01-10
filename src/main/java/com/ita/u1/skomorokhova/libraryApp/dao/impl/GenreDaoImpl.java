@@ -1,38 +1,38 @@
 package com.ita.u1.skomorokhova.libraryApp.dao.impl;
 
 import com.ita.u1.skomorokhova.libraryApp.dao.GenreDao;
-import com.ita.u1.skomorokhova.libraryApp.entity.impl.Entity;
+import com.ita.u1.skomorokhova.libraryApp.entity.impl.Genre;
 
 import java.util.List;
 
 public class GenreDaoImpl implements GenreDao {
     @Override
-    public List findAll() {
+    public List<Genre> findAll() {
         return null;
     }
 
     @Override
-    public Entity findEntityById(Object id) {
+    public Genre findEntityById(Long id) {
         return null;
     }
 
     @Override
-    public boolean delete(Entity entity) {
+    public boolean delete(Genre genre) {
         return false;
     }
 
     @Override
-    public boolean delete(Object id) {
+    public boolean delete(Long id) {
         return false;
     }
 
     @Override
-    public boolean create(Entity entity) {
+    public boolean create(Genre genre) {
         return false;
     }
 
     @Override
-    public Entity update(Entity entity) {
+    public Genre update(Genre genre) {
         return null;
     }
 }

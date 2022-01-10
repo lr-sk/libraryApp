@@ -1,7 +1,7 @@
 package com.ita.u1.skomorokhova.libraryApp.dao;
 
 import com.ita.u1.skomorokhova.libraryApp.consts.Errors;
-import com.ita.u1.skomorokhova.libraryApp.entity.impl.Entity;
+import com.ita.u1.skomorokhova.libraryApp.entity.Entity;
 import lombok.NonNull;
 
 import java.sql.Connection;
