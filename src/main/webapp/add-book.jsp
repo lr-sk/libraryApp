@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<jsp:useBean id="addBookConsts" class="com.ita.u1.skomorokhova.libraryApp.libraryApp.consts.jsp.AddBookJspConsts"/>
-<jsp:useBean id="jspConsts" class="com.ita.u1.skomorokhova.libraryApp.libraryApp.consts.jsp.JspConsts"/>
+<jsp:useBean id="addBookConsts" class="com.ita.u1.skomorokhova.libraryApp.consts.jsp.AddBookJspConsts"/>
+<jsp:useBean id="jspConsts" class="com.ita.u1.skomorokhova.libraryApp.consts.jsp.JspConsts"/>
 
 <!DOCTYPE html>
 <html>
