@@ -5,7 +5,7 @@ import com.ita.u1.skomorokhova.libraryApp.entity.Entity;
 import lombok.Builder;
 import lombok.Data;
 
-import java.io.File;
+import java.io.FileInputStream;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -23,5 +23,5 @@ public class Book implements Entity {
     private int numberOfPages;
     private int numberOfCopies;
     @Builder.Default private LocalDate registrationDate = LocalDate.now();
-    private File image;
+    private FileInputStream image;
 }

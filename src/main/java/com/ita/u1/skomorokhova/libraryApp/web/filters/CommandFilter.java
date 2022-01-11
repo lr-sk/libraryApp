@@ -1,9 +1,10 @@
 package com.ita.u1.skomorokhova.libraryApp.web.filters;
 
-import com.ita.u1.skomorokhova.libraryApp.command.impl.CommandType;
+import com.ita.u1.skomorokhova.libraryApp.command.CommandType;
 import com.ita.u1.skomorokhova.libraryApp.consts.Errors;
 import com.ita.u1.skomorokhova.libraryApp.consts.GeneralConsts;
 import lombok.extern.log4j.Log4j2;
+import lombok.var;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -33,6 +34,7 @@ public class CommandFilter implements Filter {
         commands.put("/writing-off-books", CommandType.WRITING_OFF_BOOKS);
         commands.put("/library-yield", CommandType.LIBRARY_YIELD);
         commands.put("/search", CommandType.SEARCH);
+        commands.put("/process-add-book", CommandType.PROCESS_ADD_BOOK);
     }
 
     @Override
@@ -43,9 +45,9 @@ public class CommandFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         if (servletRequest instanceof HttpServletRequest) {
-            HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
-            String uri = httpServletRequest.getRequestURI();
-            CommandType commandType = commands.get(uri);
+            var httpServletRequest = (HttpServletRequest) servletRequest;
+            var uri = httpServletRequest.getRequestURI();
+            var commandType = commands.get(uri);
             httpServletRequest.setAttribute(GeneralConsts.COMMAND, commandType);
             filterChain.doFilter(servletRequest, servletResponse);
         } else {

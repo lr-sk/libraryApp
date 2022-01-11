@@ -7,6 +7,6 @@ import lombok.Data;
 @Builder
 @Data
 public class Genre implements Entity {
-    private int id;
+    private long id;
     private String name;
 }

@@ -19,7 +19,7 @@ public class AddBook implements Command {
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         val genresService = new GenreService(new GenreDaoImpl());
         val authorService = new AuthorService(new AuthorDaoImpl());
-        request.setAttribute(GeneralConsts.GENRES, genresService.getAll());
+        request.setAttribute(GeneralConsts.GENRES, genresService.getAllNames());
         request.setAttribute(GeneralConsts.AUTHORS, authorService.getAll());
         request.getRequestDispatcher(JspPagesNames.ADD_BOOK_JSP).forward(request, response);
     }

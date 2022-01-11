@@ -11,6 +11,7 @@ public class BookBuilder implements EntityBuilder<Book> {
     @Override
     public Book buildEntity(ResultSet resultSet) throws SQLException {
         return Book.builder()
+                .id(Long.parseLong(resultSet.getString("id")))
                 .name(resultSet.getString("name"))
                 .originalName(resultSet.getString("original_name"))
                 .cost(resultSet.getBigDecimal("cost"))

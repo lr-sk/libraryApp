@@ -14,7 +14,7 @@ public class BookService implements EntityService<Book> {
     }
 
     @Override
-    public List getAll() {
+    public List<Book> getAll() {
         return this.dao.findAll();
     }
 }

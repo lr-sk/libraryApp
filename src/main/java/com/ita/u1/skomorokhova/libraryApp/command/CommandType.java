@@ -1,4 +1,4 @@
-package com.ita.u1.skomorokhova.libraryApp.command.impl;
+package com.ita.u1.skomorokhova.libraryApp.command;
 
 public enum CommandType {
     MAIN_PAGE,
@@ -14,5 +14,6 @@ public enum CommandType {
     CLOSE_BOOKING,
     WRITING_OFF_BOOKS,
     LIBRARY_YIELD,
-    SEARCH
+    SEARCH,
+    PROCESS_ADD_BOOK
 }

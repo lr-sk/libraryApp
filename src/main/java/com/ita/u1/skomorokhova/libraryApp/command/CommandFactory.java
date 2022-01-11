@@ -36,6 +36,8 @@ public class CommandFactory {
                 return new LibraryYield();
             case SEARCH:
                 return new Search();
+            case PROCESS_ADD_BOOK:
+                return new ProcessAddBook();
             default:
                 throw new UnknownCommandException();
         }
