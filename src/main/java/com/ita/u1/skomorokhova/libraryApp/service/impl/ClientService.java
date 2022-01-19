@@ -17,4 +17,5 @@ public class ClientService implements EntityService<Client> {
     public List getAll() {
         return null;
     }
+
 }

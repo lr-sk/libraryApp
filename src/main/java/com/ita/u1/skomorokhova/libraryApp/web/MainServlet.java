@@ -19,7 +19,6 @@ import java.io.IOException;
 public class MainServlet extends HttpServlet {
 
     public void init() {
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

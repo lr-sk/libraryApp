@@ -5,7 +5,7 @@ import com.ita.u1.skomorokhova.libraryApp.command.Command;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class LibraryYield implements Command {
+public class WritingOffBooksPage implements Command {
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) {
 

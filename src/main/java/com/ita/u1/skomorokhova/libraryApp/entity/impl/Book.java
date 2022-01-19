@@ -6,8 +6,10 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.io.FileInputStream;
+import java.io.InputStream;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Builder
 @Data
@@ -23,5 +25,5 @@ public class Book implements Entity {
     private int numberOfPages;
     private int numberOfCopies;
     @Builder.Default private LocalDate registrationDate = LocalDate.now();
-    private FileInputStream image;
+    private List<InputStream> images;
 }

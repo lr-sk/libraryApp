@@ -17,4 +17,5 @@ public class AuthorService implements EntityService<Author> {
     public List getAll() {
         return this.dao.findAll();
     }
+
 }

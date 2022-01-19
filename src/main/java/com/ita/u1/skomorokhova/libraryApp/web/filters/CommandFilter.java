@@ -21,20 +21,20 @@ public class CommandFilter implements Filter {
     static {
         commands.put("/", CommandType.MAIN_PAGE);
         commands.put("/main", CommandType.MAIN_PAGE);
-        commands.put("/all-books", CommandType.ALL_BOOKS);
-        commands.put("/add-book", CommandType.ADD_BOOK);
-        commands.put("/edit-book", CommandType.EDIT_BOOK);
-        commands.put("/all-clients", CommandType.ALL_CLIENTS);
-        commands.put("/add-client", CommandType.ADD_CLIENT);
-        commands.put("/edit-client", CommandType.EDIT_CLIENT);
-        commands.put("/all-bookings", CommandType.ALL_BOOKINGS);
-        commands.put("/add-booking", CommandType.ADD_BOOKING);
-        commands.put("/edit-booking", CommandType.EDIT_BOOKING);
-        commands.put("/close-booking", CommandType.CLOSE_BOOKING);
-        commands.put("/writing-off-books", CommandType.WRITING_OFF_BOOKS);
-        commands.put("/library-yield", CommandType.LIBRARY_YIELD);
+        commands.put("/all-books", CommandType.ALL_BOOKS_PAGE);
+        commands.put("/add-book", CommandType.ADD_BOOK_PAGE);
+        commands.put("/edit-book", CommandType.EDIT_BOOK_PAGE);
+        commands.put("/all-clients", CommandType.ALL_CLIENTS_PAGE);
+        commands.put("/add-client", CommandType.ADD_CLIENT_PAGE);
+        commands.put("/edit-client", CommandType.EDIT_CLIENT_PAGE);
+        commands.put("/all-bookings", CommandType.ALL_BOOKINGS_PAGE);
+        commands.put("/add-booking", CommandType.ADD_BOOKING_PAGE);
+        commands.put("/edit-booking", CommandType.EDIT_BOOKING_PAGE);
+        commands.put("/close-booking", CommandType.CLOSE_BOOKING_PAGE);
+        commands.put("/writing-off-books", CommandType.WRITING_OFF_BOOKS_PAGE);
+        commands.put("/library-yield", CommandType.LIBRARY_YIELD_PAGE);
         commands.put("/search", CommandType.SEARCH);
-        commands.put("/process-add-book", CommandType.PROCESS_ADD_BOOK);
+        commands.put("/process-add-book", CommandType.ADD_BOOK_ACTION);
     }
 
     @Override
@@ -49,10 +49,10 @@ public class CommandFilter implements Filter {
             var uri = httpServletRequest.getRequestURI();
             var commandType = commands.get(uri);
             httpServletRequest.setAttribute(GeneralConsts.COMMAND, commandType);
-            filterChain.doFilter(servletRequest, servletResponse);
         } else {
             log.error(Errors.CANNOT_USE_COMMAND_FILTER);
         }
+        filterChain.doFilter(servletRequest, servletResponse);
     }
 
     @Override
