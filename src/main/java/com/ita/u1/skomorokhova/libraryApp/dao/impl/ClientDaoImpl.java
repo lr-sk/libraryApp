@@ -1,11 +1,17 @@
 package com.ita.u1.skomorokhova.libraryApp.dao.impl;
 
 import com.ita.u1.skomorokhova.libraryApp.dao.ClientDao;
+import com.ita.u1.skomorokhova.libraryApp.entity.builder.EntityBuilder;
 import com.ita.u1.skomorokhova.libraryApp.entity.impl.Client;
 
 import java.util.List;
 
 public class ClientDaoImpl implements ClientDao {
+
+    public EntityBuilder<Client> getEntityBuilder() {
+        return null;
+    }
+
     @Override
     public Client findEntityById(Long id) {
         return null;

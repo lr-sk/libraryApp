@@ -7,4 +7,10 @@ import lombok.Data;
 @Builder
 @Data
 public class Author implements Entity {
+    private long id;
+    private String name;
+    private String surname;
+    private String patronymic;
+    private String image;
+    private String fullName;
 }

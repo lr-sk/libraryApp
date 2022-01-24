@@ -2,7 +2,8 @@ package com.ita.u1.skomorokhova.libraryApp.command;
 
 public enum CommandType {
     MAIN_PAGE,
-    ALL_BOOKS_PAGE,
+    ALL_BOOKS_TABLE,
+    ALL_BOOKS_GALLERY,
     ADD_BOOK_PAGE,
     EDIT_BOOK_PAGE,
     ALL_CLIENTS_PAGE,
@@ -15,5 +16,9 @@ public enum CommandType {
     WRITING_OFF_BOOKS_PAGE,
     LIBRARY_YIELD_PAGE,
     SEARCH,
-    ADD_BOOK_ACTION
+    ADD_BOOK_ACTION,
+    ADD_AUTHOR_ACTION,
+    ADD_CLIENT_ACTION,
+    ADD_BOOKING_ACTION,
+    ADD_AUTHOR_PAGE,
 }

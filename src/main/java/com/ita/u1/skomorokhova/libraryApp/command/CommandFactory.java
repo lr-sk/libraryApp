@@ -10,8 +10,10 @@ public class CommandFactory {
         switch (commandType) {
             case MAIN_PAGE:
                 return new MainPage();
-            case ALL_BOOKS_PAGE:
-                return new AllBooksPage();
+            case ALL_BOOKS_TABLE:
+                return new AllBooksTablePage();
+            case ALL_BOOKS_GALLERY:
+                return new AllBooksGalleryPage();
             case ADD_BOOK_PAGE:
                 return new AddBookPage();
             case EDIT_BOOK_PAGE:
@@ -38,6 +40,14 @@ public class CommandFactory {
                 return new Search();
             case ADD_BOOK_ACTION:
                 return new AddBookAction();
+            case ADD_AUTHOR_ACTION:
+                return new AddAuthorAction();
+            case ADD_CLIENT_ACTION:
+                return new AddClientAction();
+            case ADD_BOOKING_ACTION:
+                return new AddBookingAction();
+            case ADD_AUTHOR_PAGE:
+                return new AddAuthorPage();
             default:
                 throw new UnknownCommandException();
         }

@@ -7,4 +7,5 @@ import lombok.Data;
 @Builder
 @Data
 public class Booking implements Entity {
+    private long id;
 }

@@ -18,4 +18,9 @@ public class ClientService implements EntityService<Client> {
         return null;
     }
 
+    @Override
+    public Client getById(long parseLong) {
+        return null;
+    }
+
 }
